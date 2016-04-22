@@ -1,28 +1,31 @@
-# react-webpack-babel
-Simple React Webpack Babel Starter Kit
+# react-native-web-starter
+Minimal starter kit for building webapps with react-native-web.
+Based on alicoding's excellent [react-webpack-babel starter](https://github.com/alicoding/react-webpack-babel).
 
 
-This is a simple [React](https://facebook.github.io/react/), [Webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) application with nothing else in it.
+This is a simple [React Native Web](https://github.com/necolas/react-native-web), [Webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) application with nothing else in it.
 
-### What's in it?
+### What's in the box?
 
 Just a simple [index.jsx](./index.jsx), [webpack.config.js](./webpack.config.js) and [index.html](./public/index.html) file.
 
-### To run
+### Getting Started
 
-Install webpack and the development server:
+Install project deps:
+
+```
+> $ npm i
+```
+
+Install webpack and the development server (if you haven't already):
 
 ```
 > $ npm i webpack-dev-server webpack -g
 ```
 
-You can simply run webpack build using this command: 
+### Running
 
-```
-> $ npm run build
-```
-
-If you want to run with webpack-dev-server simply run this command: 
+To run using the webpack-dev-server (w/ hot reloading): 
 
 ```
 > $ npm run dev
@@ -30,4 +33,20 @@ If you want to run with webpack-dev-server simply run this command:
 
 Open the web browser to `http://localhost:8080/`
 
-Please contribute to the project if you think this can be done better in anyway even for this README :)
+### Building
+
+To build for production, run:
+
+```
+> $ npm run build
+```
+
+### Deploying
+
+To deploy to gh-pages: 
+
+```
+> $ npm run gh-pages
+```
+
+(remember to `npm run build` first)
